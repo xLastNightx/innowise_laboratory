@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools>=45.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-project"
+version = "0.1.0"
+dependencies = [
+    "colorama==0.4.6"
+]
