@@ -1,8 +1,6 @@
 # we need it to calculate the current year
 from datetime import date
 
-user_profile = {}
-
 # calculating the current year
 today = date.today()
 current_year = today.year
@@ -21,8 +19,6 @@ if birth_year > 2025 or birth_year <= 1920:
 current_age = current_year - birth_year
 
 # calculating the life_stage
-
-
 def generate_profile(age):
     if age <= 12:
         life_stage = "Child"
@@ -32,9 +28,10 @@ def generate_profile(age):
         life_stage = "Adult"
     return life_stage
 
-
 stage = generate_profile(current_age)
 
+# user profile and set, that we will fill in future
+user_profile = {}
 hobbies = set()
 desire_to_input_another_hobby = True
 
