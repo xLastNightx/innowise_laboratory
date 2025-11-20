@@ -41,7 +41,6 @@ while desire_to_input_another_hobby:
         "Enter your favorite hobby or type 'stop' to finish it: ").lower()
     if hobby == "stop":
         desire_to_input_another_hobby = False
-        break
     else:
         hobbies.add(hobby)
 
