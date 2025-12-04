@@ -10,15 +10,15 @@ SCHOOL DATABASE: COMPLETE SQL SCRIPT
 CREATE TABLE IF NOT EXISTS students (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     full_name TEXT NOT NULL,
-    birth_year INTEGER NOT NULL
+    birth_year INTEGER DEFAULT 2000
 );
 
 -- Table: grades - stores student grades with referential integrity
 CREATE TABLE IF NOT EXISTS grades (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     student_id INTEGER NOT NULL,
-    subject TEXT NOT NULL,
-    grade INTEGER NOT NULL CHECK (grade BETWEEN 1 AND 100),
+    subject TEXT DEFAULT 'Not Selected',
+    grade INTEGER CHECK (grade BETWEEN 1 AND 100),
     FOREIGN KEY (student_id) REFERENCES students(id) ON DELETE CASCADE
 );
 
