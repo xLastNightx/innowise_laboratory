@@ -10,6 +10,13 @@ __pycache__/
 # C extensions
 *.so
 
+# my files
+*.sql
+!lecture_4/data.sql
+
+*.db
+!lecture_4/school.db
+
 # Distribution / packaging
 .Python
 build/
