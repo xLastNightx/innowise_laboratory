@@ -8,4 +8,3 @@ A FastAPI with REST API for managing personal book collections.
 - Search books by title, author, or year
 - Automatic API documentation
 - SQLite database with SQLAlchemy ORM
-- Input validation with Pydantic v2
